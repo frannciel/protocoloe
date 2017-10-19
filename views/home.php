@@ -87,7 +87,7 @@
                <div class="barra-sub-titu">Campus Eunápolis</div>
             </div>
             <div class="col-md-3" style="text-align: right; padding-top: 40px;">
-              <b><?php echo $usuario->nome; ?></b>
+              <b><?php echo $usuario->nome." ".$usuario->sobrenome; ?></b>
             </div>
             <div class="col-md-1" style="padding-top:25px">
               <div class="dropdown">
