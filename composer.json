@@ -1,0 +1,10 @@
+{
+    "name": "Protoco Eletrônico",
+    "description": "Envio eletrônico de documentos",
+    "authors": [
+        {
+            "name": "Franciel Castro",
+            "email": "frannciel@gmail.com"
+        }
+    ]
+}
