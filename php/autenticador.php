@@ -13,7 +13,7 @@ if($email != 1){
 			$_SESSION['email']	= $email ;
 			$_SESSION['senha']	= $senha ;
 			$_SESSION['id'] = $usuario->id;
-			header("location:../Views/home.php");
+			header("location:../views/home.php");
 		}else{
 			$_SESSION['error']	= true;
 			$_SESSION['email']	= $email;
