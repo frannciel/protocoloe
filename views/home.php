@@ -1,4 +1,8 @@
 <?php 
+	//comando loggin heroku
+	//heroku logs --source app --ps worker
+	//heroku logs --ps router
+	//heroku logs --source app --ps worker
    // inicia a sessão e verifica se existe uma sessão ativa para o usuario atual
    // caso não haja sessão indica que o usuario não está logado e o redireciona a tela de login
    // tha82274629 
