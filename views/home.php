@@ -143,7 +143,7 @@
                      </div>
                      <!--BUTÃO NOVA MENSAGEM-->
                      <div class="col-md-2">
-                        <a class="btn " href="form_enviar.php" style="background: #19882c; color: #fff"> 
+                        <a class="btn " href="email.php" style="background: #19882c; color: #fff"> 
                            <span class="glyphicon glyphicon glyphicon-edit" aria-hidden="true">
                            <span>Nova </span>
                         </a>
