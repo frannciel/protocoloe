@@ -6,5 +6,9 @@
             "name": "Franciel Castro",
             "email": "frannciel@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "php": "^5.5|^7.0",
+        "mailgun/mailgun-php": ">=1.1"
+    }
 }
