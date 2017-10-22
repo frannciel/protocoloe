@@ -1,8 +1,11 @@
 # Using Awesome https://github.com/PHPMailer/PHPMailer
 <?php
-print_r( getenv("MAILGUN_API_KEY"));
-require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
 
+echo "Chegou aqui 1 </br>";
+require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
+use PHPMailer/PHPMailer;
+
+echo "Chegou aqui 2 </br>";
 $mail = new PHPMailer;
 
 $mail->isSMTP();                                        // Set mailer to use SMTP
