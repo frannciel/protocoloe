@@ -10,7 +10,7 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
-
+require 'vendor/autoload.php';
 echo "Chegou aqui 2 </br>";
 //$mail = new PHPMailer();
 $mail = new PHPMailer(true);
