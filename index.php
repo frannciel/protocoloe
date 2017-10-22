@@ -1,11 +1,11 @@
 <?php
 
 //echo "Chegou aqui 1 </br>";
-//require_once 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require_once 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
 //require_once 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
-require 'PHPMailerAutoload.php';
+//require 'PHPMailerAutoload.php';
 //vendor/autoload.php
-//use PHPMailer/PHPMailer;
+use PHPMailer/PHPMailer;
 
 echo "Chegou aqui 2 </br>";
 $mail = new PHPMailer();
