@@ -1,19 +1,31 @@
+// Using Awesome https://github.com/PHPMailer/PHPMailer
 <?php
+require '../vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
-# Include the Autoloader (see "Libraries" for install instructions)
-require '../vendor/autoload.php';
-use Mailgun\Mailgun;
+$mail = new PHPMailer;
 
-# Instantiate the client.
-$mgClient = new Mailgun('YOUR_API_KEY');
-$domain = "YOUR_DOMAIN_NAME";
+$mail->isSMTP();                                      // Set mailer to use SMTP
+$mail->Host = 'smtp.mailgun.org';                     // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                               // Enable SMTP authentication
+$mail->Username = 'MAILGUN_SMTP_LOGIN';              // SMTP username
+$mail->Password = 'MAILGUN_SMTP_PASSWORD';             // SMTP password
+$mail->Port     = 'MAILGUN_SMTP_PORT';
+$mail->SMTPSecure = 'tls';                            // Enable encryption, only 'tls' is accepted
 
-# Make the call to the client.
-$result = $mgClient->sendMessage($domain, array(
-    'from'    => 'Anderson<frannciel@gmail.com>',
-    'to'      => 'Baz <frannciel@gmail.com>',
-    'subject' => 'Hello',
-    'text'    => 'Testing some Mailgun awesomness!'
-));
+$mail->From = 'frannciel@gmail.com';
+$mail->FromName = 'Mailer';
+$mail->addAddress('frannciel.edu@gmail.com');                 // Add a recipient
+
+$mail->WordWrap = 50;                                 // Set word wrap to 50 characters
+
+$mail->Subject = 'Hello';
+$mail->Body    = 'Testing some Mailgun awesomness';
+
+if(!$mail->send()) {
+    echo 'Message could not be sent.';
+    echo 'Mailer Error: ' . $mail->ErrorInfo;
+} else {
+    echo 'Message has been sent';
+}
 
 ?>
