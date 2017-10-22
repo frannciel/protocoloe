@@ -11,7 +11,7 @@ $mail = new PHPMailer;
 $mail->SMTPDebug = 2;
 
 $mail->isSMTP();                                        // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';                       // Specify main and backup SMTP servers
+$mail->Host     = getenv("EMAIL_SMTP_SERVER");          // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                                 // Enable SMTP authentication
 $mail->Username = getenv("EMAIL_SMTP_LOGIN");         // SMTP username
 $mail->Password = getenv("EMAIL_SMTP_PASSWORD");      // SMTP password
@@ -19,7 +19,7 @@ $Mailer->Port   = getenv("EMAIL_SMTP_PORT");
 $mail->SMTPSecure = 'tls';                              // Enable encryption, only 'tls' is accepted
 
 $mail->From = getenv("EMAIL_SMTP_LOGIN");
-$mail->FromName = 'Franciel Castro';
+$mail->FromName = 'Anderson Castro';
 $mail->addAddress('frannciel@gmail.com','Anderson castro');                 // Add a recipient
 
 //Set who the message is to be sent from
