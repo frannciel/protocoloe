@@ -5,7 +5,7 @@ require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
 //use PHPMailer/PHPMailer;
 
 echo "Chegou aqui 2 </br>";
-$mail = new PHPMailer;
+$mail = new PHPMailer();
 
 $mail->isSMTP();                                        // Set mailer to use SMTP
 $mail->Host = 'smtp.mailgun.org';                       // Specify main and backup SMTP servers
