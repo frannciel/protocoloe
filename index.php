@@ -1,8 +1,8 @@
 <?php
 
 //echo "Chegou aqui 1 </br>";
-//require-once 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require-once 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+//require_once 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require_once 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 //vendor/autoload.php
 //use PHPMailer/PHPMailer;
 
