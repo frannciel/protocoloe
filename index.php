@@ -11,9 +11,9 @@ $mail = new PHPMailer;
 $mail->SMTPDebug = 2;
 
 print_r(getenv("EMAIL_SMTP_SERVER"));
-print_r((getenv("EMAIL_SMTP_LOGIN"));
-print_r((getenv("EMAIL_SMTP_PASSWORD"));
-print_r((getenv("EMAIL_SMTP_PORT"));
+print_r(getenv("EMAIL_SMTP_LOGIN"));
+print_r(getenv("EMAIL_SMTP_PASSWORD"));
+print_r(getenv("EMAIL_SMTP_PORT"));
 echo "</br>";
 
 $mail->isSMTP();                                        // Set mailer to use SMTP
