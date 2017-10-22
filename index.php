@@ -4,9 +4,12 @@
 //require_once 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
 //require_once 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 //require 'PHPMailerAutoload.php';
-require_once 'vendor/autoload.php';
-include 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+//require_once 'vendor/autoload.php';
+//include 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
 //use PHPMailer\PHPMailer;
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 echo "Chegou aqui 2 </br>";
 //$mail = new PHPMailer();
