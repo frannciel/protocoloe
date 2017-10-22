@@ -1,7 +1,7 @@
 # Using Awesome https://github.com/PHPMailer/PHPMailer
 <?php
 print_r( getenv("MAILGUN_API_KEY"));
-require '../vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
 
 $mail = new PHPMailer;
 
