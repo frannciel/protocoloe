@@ -1,4 +1,3 @@
-# Using Awesome https://github.com/PHPMailer/PHPMailer
 <?php
 
 echo "Chegou aqui 1 </br>";
