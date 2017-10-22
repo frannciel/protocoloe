@@ -1,17 +1,10 @@
 <?php
 
-//echo "Chegou aqui 1 </br>";
-//require_once 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
-//require_once 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
-//require 'PHPMailerAutoload.php';
-//require_once 'vendor/autoload.php';
-//include 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
-//use PHPMailer\PHPMailer;
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+
 require 'vendor/autoload.php';
-echo "Chegou aqui 2 </br>";
+
 //$mail = new PHPMailer();
 $mail = new PHPMailer;
 
@@ -25,7 +18,7 @@ $mail->SMTPSecure = 'tls';                              // Enable encryption, on
 
 $mail->From = getenv("MAILGUN_SMTP_LOGIN");
 $mail->FromName = 'Mailer';
-$mail->addAddress('frannciel@gmail.com');                 // Add a recipient
+$mail->addAddress('frannciel.edu@gmail.com');                 // Add a recipient
 
 $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 
