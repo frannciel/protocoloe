@@ -23,7 +23,6 @@ class ComposerStaticInitc0136a3610f886d22ebb291d2ef60d80
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
-            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'H' => 
         array (
@@ -52,10 +51,6 @@ class ComposerStaticInitc0136a3610f886d22ebb291d2ef60d80
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
-        ),
-        'PHPMailer\\PHPMailer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'Http\\Promise\\' => 
         array (
