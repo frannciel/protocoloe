@@ -1,26 +1,20 @@
 # Using Awesome https://github.com/PHPMailer/PHPMailer
 <?php
 print_r( getenv("MAILGUN_API_KEY"));
-print_r( parse_url(getenv("MAILGUN_DOMAIN")));
-print_r( parse_url(getenv("MAILGUN_PUBLIC_KEY")));
-print_r( parse_url(getenv("MAILGUN_SMTP_LOGIN")));
-print_r( parse_url(getenv("MAILGUN_SMTP_PASSWORD")));
-print_r( parse_url(getenv("MAILGUN_SMTP_PORT")));
-print_r( parse_url(getenv("MAILGUN_SMTP_SERVER")));
 
-/*
-require 'PHPMailerAutoload.php';
+require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mailgun.org';                     // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'postmaster@YOUR_DOMAIN_NAME';   // SMTP username
-$mail->Password = 'secret';                           // SMTP password
-$mail->SMTPSecure = 'tls';                            // Enable encryption, only 'tls' is accepted
+$mail->isSMTP();                                        // Set mailer to use SMTP
+$mail->Host = 'smtp.mailgun.org';                       // Specify main and backup SMTP servers
+$mail->SMTPAuth = true;                                 // Enable SMTP authentication
+$mail->Username = getenv("MAILGUN_SMTP_LOGIN");         // SMTP username
+$mail->Password = getenv("MAILGUN_SMTP_PASSWORD");      // SMTP password
+$Mailer->Port   = getenv("MAILGUN_SMTP_PORT");
+$mail->SMTPSecure = 'tls';                              // Enable encryption, only 'tls' is accepted
 
-$mail->From = 'YOU@YOUR_DOMAIN_NAME';
+$mail->From = getenv("MAILGUN_SMTP_LOGIN");
 $mail->FromName = 'Mailer';
 $mail->addAddress('bar@example.com');                 // Add a recipient
 
@@ -35,5 +29,7 @@ if(!$mail->send()) {
 } else {
     echo 'Message has been sent';
 }
-*/
+
+print_r(getenv("MAILGUN_SMTP_SERVER"));
+
 ?>
