@@ -1,8 +1,7 @@
 # Using Awesome https://github.com/PHPMailer/PHPMailer
 <?php
 print_r( getenv("MAILGUN_API_KEY"));
-
-require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+require '../vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 
@@ -16,7 +15,7 @@ $mail->SMTPSecure = 'tls';                              // Enable encryption, on
 
 $mail->From = getenv("MAILGUN_SMTP_LOGIN");
 $mail->FromName = 'Mailer';
-$mail->addAddress('bar@example.com');                 // Add a recipient
+$mail->addAddress('frannciel@gmail.com');                 // Add a recipient
 
 $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 
