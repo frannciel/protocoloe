@@ -1,11 +1,14 @@
 <?php
 
-echo "Chegou aqui 1 </br>";
-require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+//echo "Chegou aqui 1 </br>";
+//require-once 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
+require-once 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+//vendor/autoload.php
 //use PHPMailer/PHPMailer;
 
 echo "Chegou aqui 2 </br>";
 $mail = new PHPMailer();
+//$mail = new PHPMailer(true);
 
 $mail->isSMTP();                                        // Set mailer to use SMTP
 $mail->Host = 'smtp.mailgun.org';                       // Specify main and backup SMTP servers
