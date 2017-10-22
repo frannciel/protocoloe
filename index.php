@@ -34,6 +34,4 @@ if(!$mail->send()) {
     echo 'Message has been sent';
 }
 
-print_r(getenv("MAILGUN_SMTP_SERVER"));
-
 ?>
