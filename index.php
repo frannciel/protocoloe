@@ -11,9 +11,10 @@ $mail = new PHPMailer;
 $mail->SMTPDebug = 2;
 
 print_r(getenv("EMAIL_SMTP_SERVER"));
-print_r("EMAIL_SMTP_LOGIN");
-print_r("EMAIL_SMTP_PASSWORD");
-print_r("EMAIL_SMTP_PORT");
+print_r((getenv("EMAIL_SMTP_LOGIN"));
+print_r((getenv("EMAIL_SMTP_PASSWORD"));
+print_r((getenv("EMAIL_SMTP_PORT"));
+echo "</br>";
 
 $mail->isSMTP();                                        // Set mailer to use SMTP
 $mail->Host     = getenv("EMAIL_SMTP_SERVER");          // Specify main and backup SMTP servers
@@ -39,6 +40,8 @@ $mail->WordWrap = 50;                                 // Set word wrap to 50 cha
 $mail->Subject = 'PHPMAil testando envio ';
 $mail->Body    = 'Testing some Mailgun awesomness';
 
+print_r($mail);
+echo "</br>";
 if(!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
