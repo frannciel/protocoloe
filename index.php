@@ -18,9 +18,9 @@ $mail->Password = getenv("EMAIL_SMTP_PASSWORD");      // SMTP password
 $Mailer->Port   = getenv("EMAIL_SMTP_PORT");
 $mail->SMTPSecure = 'tls';                              // Enable encryption, only 'tls' is accepted
 
-$mail->From = getenv("EMAIL_SMTP_LOGIN");
+$mail->From = getenv("EMAIL_SMTP_LOGIN", 'franciel castro');
 $mail->FromName = 'Franciel Castro';
-$mail->addAddress('frannciel@gmail.com','Anderson');                 // Add a recipient
+$mail->addAddress('frannciel@gmail.com','Anderson castro');                 // Add a recipient
 
 $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 
