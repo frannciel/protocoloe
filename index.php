@@ -20,7 +20,7 @@ $mail->SMTPSecure = 'tls';                              // Enable encryption, on
 
 $mail->From = getenv("EMAIL_SMTP_LOGIN");
 $mail->FromName = 'Mailer';
-$mail->addAddress('frannciel.edu@gmail.com');                 // Add a recipient
+$mail->addAddress('frannciel@gmail.com');                 // Add a recipient
 
 $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 
