@@ -19,12 +19,12 @@ $Mailer->Port   = getenv("EMAIL_SMTP_PORT");
 $mail->SMTPSecure = 'tls';                              // Enable encryption, only 'tls' is accepted
 
 $mail->From = getenv("EMAIL_SMTP_LOGIN");
-$mail->FromName = 'Mailer';
-$mail->addAddress('frannciel@gmail.com');                 // Add a recipient
+$mail->FromName = 'Franciel Castro';
+$mail->addAddress('frannciel@gmail.com','Anderson');                 // Add a recipient
 
 $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 
-$mail->Subject = 'Ola testando ';
+$mail->Subject = 'PHPMAil testando envio ';
 $mail->Body    = 'Testing some Mailgun awesomness';
 
 if(!$mail->send()) {
