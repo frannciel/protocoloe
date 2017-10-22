@@ -2,7 +2,7 @@
 
 echo "Chegou aqui 1 </br>";
 require 'vendor/phpmailer/phpmailer/src/PHPMailer.php';
-use PHPMailer/PHPMailer;
+//use PHPMailer/PHPMailer;
 
 echo "Chegou aqui 2 </br>";
 $mail = new PHPMailer;
