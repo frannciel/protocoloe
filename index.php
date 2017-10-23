@@ -1,3 +1,9 @@
+# https://github.com/PHPMailer/PHPMailer/wiki/Using-Gmail-with-XOAUTH2
+# https://github.com/PHPMailer/PHPMailer/tree/master/examples
+# https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+# https://www.gn10.com.br/blog/dicas/envie-emails-php-smtp-gmail-google-apps/
+# https://documentation.mailgun.com/en/latest/quickstart-sending.html#send-via-smtp
+# http://rberaldo.com.br/enviando-e-mails-com-a-classe-phpmailer/
 <?php
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -22,10 +28,10 @@ $mail->SMTPAuth = true;                                 // Enable SMTP authentic
 $mail->Username = getenv("EMAIL_SMTP_LOGIN");         // SMTP username
 $mail->Password = getenv("EMAIL_SMTP_PASSWORD");      // SMTP password
 $Mailer->Port   = getenv("EMAIL_SMTP_PORT");
-$mail->SMTPSecure = 'tls';                              // Enable encryption, only 'tls' is accepted
+$mail->SMTPSecure = 'ssl';                              // Enable encryption, only 'tls' is accepted
 
 $mail->From = getenv("EMAIL_SMTP_LOGIN");
-$mail->FromName = 'Anderson Castro';
+$mail->FromName = 'compras eunápolis';
 $mail->addAddress('frannciel@gmail.com','Anderson castro');                 // Add a recipient
 
 //Set who the message is to be sent from
