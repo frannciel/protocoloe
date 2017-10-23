@@ -28,7 +28,7 @@ $mail->SMTPAuth = true;                                 // Enable SMTP authentic
 $mail->Username = getenv("EMAIL_SMTP_LOGIN");         // SMTP username
 $mail->Password = getenv("EMAIL_SMTP_PASSWORD");      // SMTP password
 $Mailer->Port   = getenv("EMAIL_SMTP_PORT");
-$mail->SMTPSecure = 'ssl';                              // Enable encryption, only 'tls' is accepted
+$mail->SMTPSecure = 'tls';                              // Enable encryption, only 'tls' is accepted
 
 $mail->From = getenv("EMAIL_SMTP_LOGIN");
 $mail->FromName = 'compras eunápolis';
